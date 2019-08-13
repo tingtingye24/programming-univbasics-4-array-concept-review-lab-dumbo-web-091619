@@ -11,7 +11,12 @@ end
 def find_max_value(array)
   # Add your solution here
   curMax = 0 
-  array.length.times 
+  array.length.times do |index|
+    if array[index]>curMax
+      curMax = array[index]
+    end
+  end
+  return curMax
 end
 
 def find_min_value(array)
